@@ -1,0 +1,7 @@
+.mui-placeholder{
+  text-align: left !important;
+  /*background: #fff !important;*/
+}
+.mui-control-content.mui-active{
+  display: inline-block;
+}

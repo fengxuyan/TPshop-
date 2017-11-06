@@ -1,0 +1,219 @@
+.title {
+  margin: 20px 15px 10px;
+  color: #6d6d72;
+  font-size: 15px;
+}
+
+.oa-contact-cell.mui-table .mui-table-cell {
+  padding: 11px 0;
+  vertical-align: middle;
+}
+
+.oa-contact-cell {
+  position: relative;
+  margin: -11px 0;
+}
+
+.oa-contact-avatar {
+  width: 75px;
+}
+
+.oa-contact-avatar img {
+  border-radius: 50%;
+}
+
+.oa-contact-content {
+  width: 100%;
+}
+
+.oa-contact-name {
+  margin-right: 20px;
+}
+
+.oa-contact-name, oa-contact-position {
+  float: left;
+}
+
+.top-bar {
+  padding-top: 0.5rem;
+  height: 3.2rem;
+  background: -webkit-linear-gradient(#b6b6b6, #fff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#b6b6b6, #fff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#b6b6b6, #fff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#b6b6b6, #fff); /* 标准的语法 */
+}
+
+.search-header {
+  text-align: left;
+  color: #000;
+  margin-left: 2rem;
+
+  /*margin-top: 0.5rem;*/
+
+}
+
+.input-header {
+  width: 80%;
+}
+
+.my-search-input {
+  width: 90%;
+  float: left;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.login-txt {
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.pic-shape {
+  display: inline-block;
+  /* padding: 0px; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+
+.list-item span:last-child {
+  font-size: 0.9rem;
+}
+
+.list-item:nth-child(1) span:first-child {
+  background: #d73378;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(2) span:first-child {
+  background: #e0b520;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(3) span:first-child {
+  background: #d5631b;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(4) span:first-child {
+  background: #46ca3e;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(5) span:first-child {
+  background: #8434bb;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(6) span:first-child {
+  background: #0bb2d7;
+}
+
+.list-item:nth-child(7) span:first-child {
+  background: #d86565;
+  margin-bottom: 1px;
+}
+
+.list-item:nth-child(8) span:first-child {
+  background: #24ddd2;
+  margin-bottom: 1px;
+}
+
+.list-item {
+  display: inline-block;
+
+  float: left;
+  width: 25%;
+  /*border: 2px solid green;*/
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+
+}
+
+.content-list {
+  height: 16rem;
+  padding-top: 4rem;
+  background: #fff;
+}
+
+.pic-bg-classfy {
+  background-image: url("../../assets/img/classfy.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-jifen {
+  background-image: url("../../assets/img/jifen.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-pinpai {
+  background-image: url("../../assets/img/pinpai.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-youhui {
+
+  background-image: url("../../assets/img/activity.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-tuangou {
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/tuangou.png") !important;
+  background-size: 55% 55% !important;
+}
+
+.pic-bg-order {
+  background-image: url("../../assets/img/dingdan.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-cart {
+  background-image: url("../../assets/img/cart.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.pic-bg-pintuan {
+  background-image: url("../../assets/img/pintuan.png") !important;
+  background-size: 55% 55% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  clear: both;
+}
+
+.banner {
+  background: #fff;
+
+}
+
+.banner .time span:first-child {
+  background: #3d3d3d;
+  color: #fff;
+  margin-left: 2rem;
+}
+.banner .time span:last-child {
+float: right;
+}
