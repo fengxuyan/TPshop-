@@ -1,0 +1,36 @@
+.pic-list-container {
+  & .title-txt {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c569cb), to(#57c0e0));
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .pic-list {
+    background: #fff;
+    & img:first-child {
+      //position: absolute;
+      width: 50%;
+      height: 50%;
+      //padding:1rem;
+      background: none !important;
+    }
+    &.pic-pos-top .img-pos {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 60%;
+      width: 50%;
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    &.pic-pos-top img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+  }
+}

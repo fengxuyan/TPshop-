@@ -1,7 +1,28 @@
-.mui-placeholder{
+.mui-placeholder {
   text-align: left !important;
   /*background: #fff !important;*/
 }
-.mui-control-content.mui-active{
+
+.mui-control-content.mui-active {
   display: inline-block;
+}
+
+.search-header.mui-search .mui-placeholder {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+.search-header .mui-search .mui-placeholder {
+  font-size: 0.9rem !important;
+  line-height: 1.6rem !important;
+}
+.classify-search .mui-search .mui-placeholder {
+  font-size: 0.9rem !important;
+  line-height: 0rem !important;
 }

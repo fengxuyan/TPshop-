@@ -2,12 +2,11 @@
   <div class="top-bar">
     <div id="tabbar" class="mui-control-content mui-active input-header">
       <div class="mui-input-row mui-search search-header">
-        <input type="search" class="mui-input-clear my-search-input" placeholder="请输入您所搜索的商品"/>
+        <input type="search" class="mui-input-clear my-search-input" (focus)="goToSearch()" placeholder="请输入您所搜索的商品"/>
       </div>
     </div>
     <span class="login-txt">登录</span>
   </div>
-
 
   <div class="content-list">
 
@@ -47,11 +46,47 @@
     </ul>
   </div>
   <ul class="mui-row banner">
-    <li class="mui-col-sm-6 mui-col-xs-12 time">16点场<span>0时8分2秒</span><span> 限时限量</span> <a class="mui-navigate-right"></a></li>
-    <li class=" mui-col-sm-6 mui-col-xs-12 txt"><span>暂无抢购商品</span></li>
+    <li class="mui-col-sm-12 mui-col-xs-12 time">16点场<span>0时8分2秒</span><span> 限时限量</span> <a
+      class="mui-navigate-right"></a></li>
+    <li class=" mui-col-sm-12 mui-col-xs-12 txt"><span>暂无抢购商品...</span></li>
   </ul>
 
+  <div class="mui-row">
+    <div class="mui-col-sm-12 mui-col-xs-12">
+      <li class="pic-list">
+        <a>
+          <img src="../../assets/img/index_pic_1.jpg"/>
+        </a>
+      </li>
+    </div>
+  </div>
+
+  <div class="mui-row pic-list-container">
+    <div class="mui-col-sm-6 mui-col-xs-6">
+      <li class="pic-list">
+        <a>
+          <img src="../../assets/img/index_pic_3.jpg"/>
+        </a>
+      </li>
+      <li class="pic-list">
+        <a>
+          <img src="../../assets/img/index_pic_4.jpg"/>
+        </a>
+      </li>
+  </div>
+    <div class="mui-col-sm-6 mui-col-xs-6">
+      <li class="pic-list pic-left">
+        <a>
+          <img src="../../assets/img/index_pic_2.jpg"/>
+        </a>
+      </li>
+    </div>
+  </div>
 </div>
+
+<app-new-product></app-new-product>
+<app-hot-product></app-hot-product>
+<app-may-like></app-may-like>
 
 <app-footer></app-footer>
 

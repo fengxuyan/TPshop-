@@ -1,0 +1,34 @@
+.pic-list-container {
+ li{
+   display: inline-block;
+   border:2px solid green;
+   float:left;
+ }
+  & .title-txt {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c569cb), to(#57c0e0));
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .pic-list {
+    & .hot-pic1 img{
+      display: inline-block;
+    }
+  }
+  & .bg-color{
+    background: #fff;
+  }
+   & img{
+     width: 100%;
+     height: 100%;
+  }
+  & .pic-list-pic3{
+    width:50%;
+  }
+}
+.mui-col-sm-6,.mui-col-xs-6{
+  float:left;
+}

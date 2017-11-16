@@ -1,0 +1,19 @@
+
+.likes-container {
+  margin-bottom: 34rem;
+  & .like-list{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+
+
+
+  .mui-col-xs-6, .mui-col-sm-6 {
+
+    float: left;
+  }
+
+}

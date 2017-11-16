@@ -10,10 +10,21 @@ import {RouterModule} from '@angular/router';
 import {rootRouterConfig} from './app.routes';
 import {HttpClientModule } from '@angular/common/http';
 
+import {HttpModule } from '@angular/http';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IndexComponent } from './index/index.component';
 import { SearchComponent } from './shared/search/search.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NewProductComponent } from './product/new-product/new-product.component';
+import { HotProductComponent } from './product/hot-product/hot-product.component';
+import { MayLikeComponent } from './product/may-like/may-like.component';
+import { ClassifyComponent } from './classify/classify.component';
+import {GetProductService} from './myService';
+import { CartComponent } from './cart/cart.component';
+import { SettingsComponent } from './settings/settings.component';
+import { PersonalComponent } from './personal/personal.component';
+
 
 @NgModule({
   declarations: [
@@ -23,15 +34,23 @@ import { FooterComponent } from './shared/footer/footer.component';
     IndexComponent,
     SearchComponent,
     FooterComponent,
+    NewProductComponent,
+    HotProductComponent,
+    MayLikeComponent,
+    ClassifyComponent,
+    CartComponent,
+    SettingsComponent,
+    PersonalComponent,
 
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     RouterModule.forRoot(rootRouterConfig),
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GetProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
