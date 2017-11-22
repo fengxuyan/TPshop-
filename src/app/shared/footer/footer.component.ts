@@ -16,10 +16,10 @@ export class FooterComponent implements OnInit {
 
 
   }
-  goToCart(){
-    this.router.navigate(['./cart']);
-
-  }
+  // goToCart(){
+  //   this.router.navigate(['./cart']);
+  //
+  // }
   goToPersonal(){
     this.router.navigate(['./personal']);
 

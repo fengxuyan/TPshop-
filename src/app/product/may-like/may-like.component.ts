@@ -34,9 +34,10 @@ export class MayLikeComponent implements OnInit {
     (function ($) {
       let list = document.getElementById("list");
       list.appendChild(createFragment(150));
-      $(document).imageLazyload({
+      let lazyLoad=$(document).imageLazyload({
         placeholder: '../../assets/img/cart.png'
       });
+      lazyLoad.refresh(true);
     })(mui);
 
   }
