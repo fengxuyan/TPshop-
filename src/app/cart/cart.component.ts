@@ -17,21 +17,6 @@ export class CartComponent implements OnInit {
       deceleration: 0.0005
     });
 
-      let scroll = mui('.mui-scroll-wrapper').scroll();
-      document.querySelector('.mui-scroll' ).addEventListener('scroll', function (e ) {
-        if(-scroll.y>200){
-          $('.syj').show();
-
-
-          mui("div").on('tap','.syj',function(){
-            mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);
-          })
-        }else{
-          $('.syj').hide();
-        }
-        console.log($('.syj'));
-      })
-
     let createFragment = function (count) {
       let fragment = document.createDocumentFragment();
       let li;
@@ -48,7 +33,6 @@ export class CartComponent implements OnInit {
       return fragment;
     };
     (function ($) {
-
       let list = mui('.m-hotsale-container')[0];
       list.appendChild(createFragment(30));
       let lazyLoad=$(document).imageLazyload({
@@ -56,11 +40,25 @@ export class CartComponent implements OnInit {
       });
       lazyLoad.refresh(true);
     })(mui);
+
+    let scroll = mui('.mui-scroll-wrapper').scroll();
+    document.querySelector('.mui-scroll' ).addEventListener('scroll', function (e ) {
+      if(-scroll.y>200){
+        $('.syj').show();
+        mui("div").on('tap','.syj',function(){
+          mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);
+        })
+      }else{
+        $('.syj').hide();
+      }
+    })
   }
+
   ngAfterContentInit() {
     $('.u-hotsale-item-container').css({'background':'#fff','border':'1px solid #ddd'});
     $('.u-hotsale-products-item').css('width', '100%');
     $('.u-hotsale-item-title').css({'display':'block','word-wrap':' break-word','word-break':'normal','white-space':'nowrap','overflow':'hidden','text-overflow':'ellipsis'});
     $('.u-hotsale-item-price').css({'display':'block','text-align':'left'});
   }
+
 }

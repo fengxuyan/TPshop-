@@ -1,166 +1,101 @@
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    height: 6000px;
-  }
-  .lift-nav{
-    position: fixed;
-    top: 100px;
-    left: 30px;
-    display: none;
-  }
-  .lift-nav li{
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    background: skyblue;
-    cursor: pointer;
-  }
-
-  .lift-nav li.current{
-    background: tomato;
-  }
-
-  .t1,.t2,.t3,.t4,.t5,.t6{
-    width: 200px;
-    height: 400px;
-    text-align: center;
-    line-height: 400px;
-    background: skyblue;
-    margin: 100px auto;
-    font-size: 30px;
-    color: #fff;
-  }
-  .t1{
-    margin-top: 200px;
-  }
-  .t2{
-    background: pink;
-  }
-  .t3{
-    background: tomato;
-  }
-  .t4{
-    background: grey;
-  }
-  .t5{
-    background: yellow;
-  }
-  .t6{
-    background: seagreen;
-  }
-
-
-</style>
 <div class="mui-scroll-wrapper">
-
 
   <div class="lift-nav">
     <ul class="lift">
-      <li>1楼</li>
-      <li>2楼</li>
-      <li>3楼</li>
-      <li>4楼</li>
-      <li>5楼</li>
-      <li>6楼</li>
+      <li class="current">数码产品</li>
+      <li>家用电器</li>
+      <li>电脑</li>
+      <li>家具</li>
+      <li>服装</li>
+      <li>箱包</li>
     </ul>
   </div>
 
-
   <div class="mui-scroll">
+    <div class="mui-content classify-wrapper">
+      <div class="mui-input-row  classify-search">
+        <a class="mui-icon mui-icon-back u-back-icon" href="../index"></a>
+        <input type="search" class="f-goto-searchUrl" (focus)="goToSearch()" placeholder="请输入您所搜索的商品"/>
+        <span class="mui-icon mui-icon-settings u-settings-icon"></span>
+      </div>
+      <div class="mui-col-sm-12 mui-col-xs-12 m-container">
+        <div class="mui-col-sm-3 mui-col-xs-3 m-left-nav-wrapper">
+        </div>
 
+        <div class="mui-col-sm-9 mui-col-xs-9 m-right-product-wrapper">
+          <div class="u-banner-container">
+            <img src="../../assets/img/index_pic_1.jpg"/>
+          </div>
+          <ul class="m-right-product-info">
 
-    <div class="lift-target">
-      <div class="t1">这是1楼</div>
-      <div class="t2">这是2楼</div>
-      <div class="t3">这是3楼</div>
-      <div class="t4">这是4楼</div>
-      <div class="t5">这是5楼</div>
-      <div class="t6">这是6楼</div>
+            <div class="lift-target">
+              <!--<div class="">-->
+              <!--</div>-->
+              <div class="t1">
+                <li class="t1 pic-list">
+                  <p>数码产品</p>
+                  <span class="u-pic-container">
+                <img src="../../assets/img/index_pic_3.jpg"/>
+                <img src="../../assets/img/index_pic_3.jpg"/>
+              </span>
+                </li>
+              </div>
+              <div class="t2">
+
+                <li class="pic-list">
+                  <p>家用电器</p>
+                  <span class="u-pic-container">
+                <img src="../../assets/img/index_pic_3.jpg"/>
+                <img src="../../assets/img/index_pic_3.jpg"/>
+              </span>
+                </li>
+              </div>
+              <div class="t3">
+
+                <li class="pic-list">
+                  <p>电脑</p>
+                  <span class="u-pic-container">
+           <img src="../../assets/img/index_pic_3.jpg"/>
+          <img src="../../assets/img/index_pic_3.jpg"/>
+        </span>
+                </li>
+              </div>
+              <div class="t4">
+                <li class="pic-list">
+                  <p>家具</p>
+                  <span class="u-pic-container">
+           <img src="../../assets/img/index_pic_3.jpg"/>
+          <img src="../../assets/img/index_pic_3.jpg"/>
+        </span>
+                </li>
+
+              </div>
+              <div class="t5">
+
+                <li class="pic-list">
+                  <p>服装</p>
+                  <span class="u-pic-container">
+           <img src="../../assets/img/index_pic_3.jpg"/>
+          <img src="../../assets/img/index_pic_3.jpg"/>
+        </span>
+                </li>
+              </div>
+              <div class="t6">
+
+                <li class="pic-list">
+                  <p>箱包</p>
+                  <span class="u-pic-container">
+           <img src="../../assets/img/index_pic_3.jpg"/>
+          <img src="../../assets/img/index_pic_3.jpg"/>
+        </span>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
-
-
-    <!--<div class="mui-content classify-wrapper">-->
-      <!--<div class="mui-input-row  classify-search">-->
-        <!--<a class="mui-icon mui-icon-back u-back-icon" href="../index"></a>-->
-        <!--<input type="search" class="" placeholder="请输入您所搜索的商品" />-->
-        <!--<span class="mui-icon mui-icon-settings u-settings-icon"></span>-->
-      <!--</div>-->
-      <!--<div class="mui-col-sm-12 mui-col-xs-12 m-container">-->
-        <!--<div class="mui-col-sm-3 mui-col-xs-3 m-left-nav-wrapper">-->
-          <!--<ul class="m-left-nav-info">-->
-            <!--<li class="m-shuma" (click)="scrollPage('m-shuma',0)">数码产品</li>-->
-            <!--<li class="m-jiayong" (click)="scrollPage('m-jiayong',30)">家用电器</li>-->
-            <!--<li class="m-computer" (click)="scrollPage('m-computer',50)">电脑</li>-->
-            <!--<li class="m-jiaju" (click)="scrollPage('m-jiaju',60)">家具</li>-->
-            <!--<li class="m-clothes" (click)="scrollPage('m-clothes',160)">服装</li>-->
-            <!--<li class="m-bag" (click)="scrollPage('m-bag',200)">箱包</li>-->
-          <!--</ul>-->
-        <!--</div>-->
-
-        <!--<div class="mui-col-sm-9 mui-col-xs-9 m-right-product-wrapper">-->
-          <!--<div class="u-banner-container"><img src="../../assets/img/index_pic_1.jpg" /></div>-->
-          <!--<ul class="m-right-product-info">-->
-            <!--<li class="pic-list">-->
-              <!--<p >数码产品</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-
-            <!--<li class="pic-list">-->
-              <!--<p>家用电器</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-
-            <!--<li class="pic-list">-->
-              <!--<p>电脑</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-            <!--<li class="pic-list">-->
-              <!--<p>家具</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-
-            <!--<li class="pic-list">-->
-              <!--<p>服装</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-            <!--<li class="pic-list">-->
-              <!--<p>箱包</p>-->
-              <!--<span class="u-pic-container">-->
-           <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-          <!--<img src="../../assets/img/index_pic_3.jpg" />-->
-        <!--</span>-->
-            <!--</li>-->
-
-          <!--</ul>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
   </div>
-
-
 </div>
 
 

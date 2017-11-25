@@ -1,5 +1,5 @@
 .mui-placeholder {
-  text-align: left !important;
+  /*text-align: left !important;*/
   /*background: #fff !important;*/
 }
 
@@ -8,8 +8,8 @@
 }
 
 .search-header.mui-search .mui-placeholder {
-  font-size: 0.9rem;
-  line-height: 1.6rem;
+  /*font-size: 0.9rem;*/
+  /*line-height: 1.6rem;*/
 }
 a{
   list-style: none;

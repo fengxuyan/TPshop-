@@ -13,6 +13,9 @@ export class IndexComponent implements OnInit {
     this.router.navigate(['/shared/search']);
 
   }
+  goToLogin(){
+    this.router.navigate(['/login']);
+  }
 
 
   ngOnInit() {

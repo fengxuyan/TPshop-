@@ -1,10 +1,32 @@
 import { Injectable } from '@angular/core';
+import {Router, ActivatedRoute, Params , CanActivate} from '@angular/router';
 declare let $:any;
 
 @Injectable()
+
 export class UtilsService {
 
-  constructor() { }
+  constructor(private router:Router, private activatedRoute:ActivatedRoute ) { }
+
+  goToSearch() {
+    console.log('123');
+    this.router.navigate(['/shared/search']);
+  }
+  getParams(): void {
+    // 获取路由参数
+    // http://localhost:4201/post?id=12&name=zhangsan
+    // this.activatedRoute.params
+    this.activatedRoute.queryParams.subscribe((params: Params) => {
+      // let userId = params['userId'];
+      console.log(params);
+    });
+  }
+  isContains(str, substr): any {
+    return str.indexOf(substr) >= 0;
+  }
+
+
+
   LiftEffect(json){
 
     var array=[];
@@ -82,4 +104,6 @@ export class UtilsService {
 
 
   }
+
+
 }

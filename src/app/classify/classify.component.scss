@@ -53,3 +53,28 @@
 .m-container {
   margin-top: 1rem;
 }
+.lift-nav {
+  /*display: none;*/
+  position: fixed;
+  top: 4rem;
+  left: 0.8rem;
+  width: 5rem;
+  background: #fff;
+
+}
+
+.lift-nav li {
+  text-align: center;
+  line-height: 4rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.lift-nav li.current {
+  background: rgba(252, 127, 137, 0.6);
+}
+
+.t1, .t2, .t3, .t4, .t5, .t6 {
+  margin: 3rem 0;
+  color: #fff;
+}

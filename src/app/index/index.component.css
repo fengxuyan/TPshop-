@@ -36,11 +36,15 @@
 
 .top-bar {
   padding-top: 0.5rem;
+  position: fixed;
+  top:0;
+  width:100%;
   height: 3.2rem;
-  background: -webkit-linear-gradient(#b6b6b6, #fff); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(#b6b6b6, #fff); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(#b6b6b6, #fff); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#b6b6b6, #fff); /* 标准的语法 */
+  z-index: 999;
+  background: -webkit-linear-gradient(#a9a9a9, #ececec); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#a9a9a9, #ececec); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#a9a9a9, #ececec); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#a9a9a9, #ececec); /* 标准的语法 */
 }
 
 .search-header {
@@ -56,10 +60,7 @@
 }
 
 .my-search-input {
-  float: left;
-  height: 1.6rem;
-  width:95%;
-  border-radius: 1rem;
+  text-align: left;
   background: #fff;
 
 }
@@ -67,9 +68,13 @@
 .login-txt {
   display: inline-block;
   position: relative;
-  top: -1.4rem;
-  font-size: 1rem;
+  top: -1.6rem;
+  padding-left: 1.1rem;
+  font-size: 1.1rem;
   color: #fff;
+  text-align: right;
+  /* float: right; */
+
 }
 
 .pic-shape {

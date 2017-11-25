@@ -10,7 +10,8 @@ import { CartComponent } from './cart/cart.component';
 
 import { SettingsComponent } from './settings/settings.component';
 import { PersonalComponent } from './personal/personal.component';
-
+import { AccountComponent } from './personal/account/account.component';
+import { ForgetPwdComponent } from './forget-pwd/forget-pwd.component';
 export const rootRouterConfig: Routes = [
   {
     path: '',
@@ -22,29 +23,43 @@ export const rootRouterConfig: Routes = [
   }, {
     path: 'login',
     component: LoginComponent
-  }, {
-    path: 'register',
-    component: RegisterComponent
-  }
-  , {
+  },
+  {
+    path:"login",component:LoginComponent,
+    children:[
+      {path:"register",component:RegisterComponent},
+      {path:"forgetPwd",component:ForgetPwdComponent}
+    ]
+  },
+  {
     path: 'shared/search',
     component: SearchComponent
-  }
-  , {
+  },
+  {
     path: 'classify',
     component: ClassifyComponent
-  }
-  , {
+  },
+  {
     path: 'cart',
     component: CartComponent
-  }
-  , {
+  },
+  {
     path: 'settings',
     component: SettingsComponent
   }
   , {
     path: 'personal',
     component: PersonalComponent
-  }
+  },
+  {
+    path: 'personal/:item',
+    component: AccountComponent
+  },
+  // {
+  //   path: 'forgetPwd',
+  //   component: ForgetPwdComponent
+  // }
+
+
 
 ];

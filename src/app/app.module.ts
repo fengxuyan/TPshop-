@@ -24,6 +24,9 @@ import {GetProductService} from './myService';
 import { CartComponent } from './cart/cart.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PersonalComponent } from './personal/personal.component';
+import { AccountComponent } from './personal/account/account.component';
+import { ForgetPwdComponent } from './forget-pwd/forget-pwd.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 @NgModule({
@@ -41,6 +44,9 @@ import { PersonalComponent } from './personal/personal.component';
     CartComponent,
     SettingsComponent,
     PersonalComponent,
+    AccountComponent,
+    ForgetPwdComponent,
+    HeaderComponent,
 
   ],
   imports: [
