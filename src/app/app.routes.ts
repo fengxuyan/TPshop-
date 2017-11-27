@@ -11,7 +11,11 @@ import { CartComponent } from './cart/cart.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PersonalComponent } from './personal/personal.component';
 import { AccountComponent } from './personal/account/account.component';
-import { ForgetPwdComponent } from './forget-pwd/forget-pwd.component';
+import { ForgetPwdComponent } from './login/forget-pwd/forget-pwd.component';
+import { LockComponent } from './personal/account/lock/lock.component';
+import { FeedbackComponent } from './personal/feedback/feedback.component';
+import { LoginContainerComponent } from './login/login-container/login-container.component';
+
 export const rootRouterConfig: Routes = [
   {
     path: '',
@@ -27,8 +31,8 @@ export const rootRouterConfig: Routes = [
   {
     path:"login",component:LoginComponent,
     children:[
-      {path:"register",component:RegisterComponent},
-      {path:"forgetPwd",component:ForgetPwdComponent}
+      // {path:"register",component:RegisterComponent},
+      // {path:"forgetPwd",component:ForgetPwdComponent}
     ]
   },
   {
@@ -52,13 +56,26 @@ export const rootRouterConfig: Routes = [
     component: PersonalComponent
   },
   {
-    path: 'personal/:item',
+    path: 'personal/account',
     component: AccountComponent
   },
-  // {
-  //   path: 'forgetPwd',
-  //   component: ForgetPwdComponent
-  // }
+  {
+    path: 'personal/account/:item',
+    component: LockComponent
+  },
+  {
+    path: 'personal/feedback',
+    component: FeedbackComponent
+  },
+  {
+    path: 'login/forgetPwd',
+    component: ForgetPwdComponent
+  },
+
+  {
+    path: 'login/register',
+    component: RegisterComponent
+  }
 
 
 

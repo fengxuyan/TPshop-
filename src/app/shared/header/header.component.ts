@@ -19,6 +19,16 @@ export class HeaderComponent implements OnInit {
     else if((this.utilsService.isContains(location.href,'cart'))){
       this.title = '购物车';
     }
+    else if((this.utilsService.isContains(location.href,'forgetPwd'))){
+      this.title = '忘记密码';
+    }
+    else if((this.utilsService.isContains(location.href,'register'))){
+      this.title = '注册';
+    }
+    else if((this.utilsService.isContains(location.href,'login'))){
+      this.title = '登录';
+    }
+
   }
 
   ngOnInit() {

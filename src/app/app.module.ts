@@ -25,8 +25,11 @@ import { CartComponent } from './cart/cart.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PersonalComponent } from './personal/personal.component';
 import { AccountComponent } from './personal/account/account.component';
-import { ForgetPwdComponent } from './forget-pwd/forget-pwd.component';
+import { ForgetPwdComponent } from './login/forget-pwd/forget-pwd.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { LockComponent } from './personal/account/lock/lock.component';
+import { FeedbackComponent } from './personal/feedback/feedback.component';
+import { LoginContainerComponent } from './login/login-container/login-container.component';
 
 
 @NgModule({
@@ -47,6 +50,9 @@ import { HeaderComponent } from './shared/header/header.component';
     AccountComponent,
     ForgetPwdComponent,
     HeaderComponent,
+    LockComponent,
+    FeedbackComponent,
+    LoginContainerComponent,
 
   ],
   imports: [
